@@ -1,11 +1,23 @@
 package com.arun.demo.bean;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.util.Date;
 
+@Entity(name = "Person")
 public class Person {
+    @Column(name = "id")
+    @Id
+    @GeneratedValue
     private String id;
+
+    @Column(name = "name")
     private String name;
+    @Column(name = "location")
     private String location;
+    @Column(name = "birth_date")
     private Date birth_date;
 
     public Person() {
