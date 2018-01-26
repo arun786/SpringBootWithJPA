@@ -7,7 +7,7 @@ import java.util.Date;
 public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private String id;
+    private int id;
 
     @Column(name = "name")
     private String name;
@@ -19,18 +19,18 @@ public class Person {
     public Person() {
     }
 
-    public Person(String id, String name, String location, Date birth_date) {
+    public Person(int id, String name, String location, Date birth_date) {
         this.id = id;
         this.name = name;
         this.location = location;
         this.birth_date = birth_date;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

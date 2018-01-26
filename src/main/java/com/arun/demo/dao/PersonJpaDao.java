@@ -23,7 +23,7 @@ public class PersonJpaDao {
      * @return
      * To get Data based on an Id.
      */
-    public Person findById(String id) {
+    public Person findById(int id) {
         return entityManager.find(Person.class, id);
     }
 

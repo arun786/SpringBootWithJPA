@@ -12,7 +12,7 @@ public class PersonJpaController {
     private PersonJpaService personJpaService;
 
     @GetMapping(value = "/jpa/find/{id}")
-    public Person findById(@PathVariable final String id) {
+    public Person findById(@PathVariable final int id) {
         return personJpaService.findById(id);
     }
 

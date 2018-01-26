@@ -11,7 +11,7 @@ public class PersonJpaService {
     @Autowired
     private PersonJpaDao personJpaDao;
 
-    public Person findById(String id) {
+    public Person findById(int id) {
         return personJpaDao.findById(id);
     }
 
