@@ -1,6 +1,6 @@
-# To find a Person
+# To find a Person based on Id
 
-## Flow for the Database is as follows
+## Flow from Controller to Service to Database is as follows
 
     Controller -> Service -> DAO -> DB
     
