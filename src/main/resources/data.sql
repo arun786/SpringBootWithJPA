@@ -1,5 +1,5 @@
 create table person(
-  id INTEGER not NULL ,
+  id INTEGER not NULL AUTO_INCREMENT,
   name VARCHAR(60) NOT NULL ,
   location VARCHAR(60) NOT NULL ,
   birth_date DATE,

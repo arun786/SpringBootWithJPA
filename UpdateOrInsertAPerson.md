@@ -4,8 +4,7 @@
 
 For Update or Insert, we use entityManager.merge(person)
 if we send the primary key along with the request, it will be updated
-if the primary key is present, else it will insert, the syntax of merge 
-method of entity manger will be the same.
+else it will insert, the syntax of merge method of entity manger will be the same.
 
     
 ## Flow from Controller to Service to Database is as follows
