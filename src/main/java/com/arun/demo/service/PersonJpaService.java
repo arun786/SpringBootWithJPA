@@ -14,4 +14,8 @@ public class PersonJpaService {
     public Person findById(String id) {
         return personJpaDao.findById(id);
     }
+
+    public Person updatePerson(Person person) {
+        return personJpaDao.updatePerson(person);
+    }
 }
